@@ -4,11 +4,13 @@ function berechneMengen() {
   const basisPortionen = 4;
 
   // Schutz: Nicht ins Minus gehen oder Null erlauben
-  if (neuePortionen < 1 || isNaN(neuePortionen)) {
-    alert("Bitte eine Zahl größer als 0 eingeben.");
-    input.value = 1;
-    neuePortionen = 1;
+  if (neuePortionen < 1 || neuePortionen > 20 || isNaN(neuePortionen)) {
+    alert("Bitte eine Zahl zwischen 1 und 20 eingeben.");
+    input.value = basisPortionen;
+    neuePortionen = basisPortionen;
   }
+
+
 
   // Alle Listen-Elemente durchgehen
   const zutaten = document.querySelectorAll('#ingredient-list li');
@@ -28,7 +30,7 @@ function berechneMengen() {
     neueMenge = Number.isInteger(neueMenge) ? neueMenge : neueMenge.toFixed(2);
 
     // Inhalt aktualisieren
-    li.innerHTML = `${neueMenge} ${einheit} ${zutatName.trim()}`;
+    li.innerText = `${neueMenge} ${einheit} ${zutatName.trim()}`;
   });
 }
 
@@ -48,3 +50,4 @@ function sendMail(event) {
     console.log(error);
   });
 }
+
