@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px 10px 120px;
+    height: 100px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2fac44;
+    border-bottom: 4px solid #2fac44;
+    /* padding-bottom: 4px; */
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    color: #e7e7e7;
+    box-shadow: 10px 10px;
+    margin-bottom: 32px;
+
+}
+
+img {
+   border-radius: 8px;
+}
+
+.img-croissant{
+    height: 240px;
+    width: auto;
+}
+
+.main-section {
+    display: flex;
+    padding: 30px 120px;
+    gap: 32px;
+}
+
+.main-layout {
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-section {
+    background-color: #efefef ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 120px;
+}
+.recipe-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-small {
+    height: 160px;
+    width: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+}
+.recipe-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.versus-section {
+    padding: 30px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.versus-content {
+    display: flex;
+    gap: 32px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+footer {
+    background-color: #403b3b;
+    padding: 30px 120px;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 50px;
+    width: auto;
+
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.social-media img {
+    height: 32px;
+}
+
