@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt-Tiramisu</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img class="header-img" src="./img/logo.png" alt="Logo Startseite" />
+      </div>
+      <nav>
+        <a href="">Start</a>
+        <a href="">Rezept des Tages</a>
+        <a href="">Kontakt</a>
+        <a href="">Impressum</a>
+      </nav>
+    </header>
+
+    <section class="section-recipe">
+        <div class="Recipe-hero-container">
+            <h2>Tiramisu</h2>
+            <img class="full-with-img" src="./img/Tiramisu.jpg" alt="Foto Tiramisu">
+        </div>
+    
+   
+        
+        <div class="recipe-icon-container">
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/clock-regular.svg" alt="Zubereitungszeit"> 
+            <p>210 Min</p> 
+            </div>
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/brain-solid.svg" alt="Schwierigkeit">
+            <p>simple</p>
+            </div>   
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/calendar-alt-regular.svg" alt="Erstelldatum vom Rezept">
+            <p>20.02.2025</p> 
+            </div>    
+        
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <span>Zutaten für:</span>
+            <input type="number" id="portion-input" value="4" min="1" 
+            style="width: 60px; padding: 5px; border: none; outline: none; text-align: center;">
+            <button onclick="berechneMengen()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
+
+        </div>
+          <ul id="ingredient-list" style="list-style: none;">
+            <li data-menge="250" data-einheit="g"> 250 g Mascarpone</li>
+            <li data-menge="3" data-einheit="Eier">3 Eier</li>
+            <li data-menge="80" data-einheit="g">80 g Zucker</li>
+            <li data-menge="200" data-einheit="ml">200 ml Espresso oder starker Kaffee</li>
+            <li data-menge="3" data-einheit="EL">3 EL Amaretto</li>
+            <li data-menge="200" data-einheit="g">200 g Löffelbiskuits</li>
+            <li data-menge="50" data-einheit="g">50 g Kakao zum Bestäuben</li>
+          </ul>  
+        
+
+      <div class="preparation">
+          <h2>Zubereitung</h2>
+          <div class="recipe-icon-content">
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
+            <p>210 min. Gesamtzeit</p>
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
+            <p>30 min. Zubereitungszeit</p>
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
+            <p>180 min. Koch & Ruhezeit</p>
+          </div>
+          <div class="kitchen-sets">
+            <h3>Benötigte Küchenuntensilien</h3>
+          <table class="recipe-table">
+          <tr>
+          <td><span class="border-box">Auflaufform</span></td>
+          <td><span class="border-box">Handmixer</span></td>
+          <td><span class="border-box">Schüssel</span></td>
+          </tr>
+          </table>
+          </div>
+
+          <p>
+           Zuerst bereiten Sie 200 ml Espresso oder sehr starken Kaffee vor und lassen Sie ihn abkühlen. Mischen Sie den Kaffee mit 3 EL Amaretto in einer flachen Schüssel.
+           Trennen Sie die Eier und schlagen Sie das Eiweiß mit einer Prise Salz steif. Stellen Sie das steif geschlagenen Eiweiß in den Kühlschrank.
+           In einer separaten Schüssel die Eigelbe mit 80 g Zucker schaumig schlagen, bis die Mischung hellund cremig ist (ca. 5 Minuten).
+           Fügen Sie 250g Mascarone zu der Eigelb-Zucker-Mischung hinzu und rühren Sie vorsichtig, bis keine Klümpchen mehr vorhanden sind.
+           Heben Sie das steif geschlagenen Eiweiß vorsichtig unter die Mascarpone-Creme, um eine luftige Konsistenz zu erhalten.
+           Tauchen Sie danach die Löffelbiskuits kurz ind die Amaretto-Kaffee-Mischung, sodass sie leicht durchtränkt sind, aber nicht zu weich werden.
+           Zu guter letzt wird geschichtet, beginnen Sie mit einer Schicht Löffenbiskuit in einer Form (ca. 24 x 16 cm). Verteilen Sie danach die Hälfte der Mascarpone-Creme gleichmäßig darüber. 
+           Wiederholen Sie den Vorgang mit einer weiteren Schicht Löffelbiskuitt und der restlichen Creme.
+           Decken Sie das Tiramisu ab und lassen Sie es für mindestens 6-8 Stunden im Kühlschrank ruhen, am besten über Nacht.
+           Vor dem Servieren das Tiramisu mit Kakaopulver bestäuben und genießen!
+
+          </p>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/logo_white.png" alt="">
+        <div class="social-media">
+            <a href="">
+                <img src="./img/facebook_logo.png" alt="">
+            </a>
+            <a href="">
+                <img src="./img/instagrram_logo.png" alt="">
+
+            </a>
+            <a href="">
+                <img src="./img/tiktok_logo.png" alt="">
+            </a>
+
+        </div>
+
+
+
+    </footer>
+
+
+  </body>
+<script src="script.js"></script>
+  
+</body>
+</html>

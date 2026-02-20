@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Lahmacun</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img class="header-img" src="./img/logo.png" alt="Logo Startseite" />
+      </div>
+      <nav>
+        <a href="">Start</a>
+        <a href="">Rezept des Tages</a>
+        <a href="">Kontakt</a>
+        <a href="">Impressum</a>
+      </nav>
+    </header>
+
+    <section class="section-recipe">
+        <div class="Recipe-hero-container">
+            <h2>Lahmacun</h2>
+            <img class="full-with-img" src="./img/Lahmacun.jpg" alt=" Foto Lahmacun">
+        </div>
+    
+   
+        
+        <div class="recipe-icon-container">
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/clock-regular.svg" alt="Gesamtzeit"> 
+            <p>90 Min</p> 
+            </div>
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/brain-solid.svg" alt="Schwierigkeit">
+            <p>medium</p>
+            </div>   
+            <div class="recipe-icon-content">  
+            <img  src="./img/icons/calendar-alt-regular.svg" alt="Erstelldatum vom Rezept">
+            <p>20.02.2025</p> 
+            </div>    
+        
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <span>Zutaten für:</span>
+            <input type="number" id="portion-input" value="4" min="1" 
+            style="width: 60px; padding: 5px; border: none; outline: none; text-align: center;">
+            <button onclick="berechneMengen()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
+
+        </div>
+          <ul id="ingredient-list" style="list-style: none;">
+            
+            <li data-menge="500" data-einheit="g"> 500 g Mehl</li>
+            <li data-menge="21" data-einheit="g">21 g frische Hefe</li>
+            <li data-menge="2" data-einheit="EL">2 EL Olivenöl</li>
+            <li data-menge="1" data-einheit="TL">1 TL Zucker</li>
+            <li data-menge="1" data-einheit="TL">1  TL Salz</li>
+            <li data-menge="1" data-einheit="Tasse">1 Tasse Wasser (lauwarm)</li>
+            <li data-menge="2" data-einheit="Stk">2 Stk Zwiebel</li>
+            <li data-menge="2" data-einheit="Stk">2 Stk Tomaten</li>
+            <li data-menge="0.5" data-einheit="Bund">0.5 Bund Petersilie</li>
+            <li data-menge="500" data-einheit="g">500 g Faschiertes (nach Wahl)</li>
+            <li data-menge="2" data-einheit="EL">2 EL Tomatenmark</li>
+            <li data-menge="1" data-einheit="Brise">1 Brise Pfeffer</li>
+            <li data-menge="1" data-einheit="Brise">1 Brise Chilliflocken/Pulver</li>
+          </ul>  
+        
+
+      <div class="preparation">
+          <h2>Zubereitung</h2>
+          <div class="recipe-icon-content">
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Gesamtzeit">
+            <p>90 min. Gesamtzeit</p>
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
+            <p>20 min. Zubereitungszeit</p>
+            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Koch & Ruhezeit">
+            <p>70 min. Koch & Ruhezeit</p>
+          </div>
+          <div class="kitchen-sets">
+            <h3>Benötigte Küchenuntensilien</h3>
+          <table class="recipe-table">
+          <tr>
+          <td><span class="border-box">Teigroller</span></td>
+          <td><span class="border-box">Schüssel</span></td>
+          <td><span class="border-box">2x Backblech</span></td>
+          </tr>
+          </table>
+          </div>
+
+          <p>
+          Für ein Lahmacun als erstes einen Hefeteig machen - dazu Mehl und Hefe mischen und mit Zucker, Salz, Wasser und Öl zu einem glatten Teig verarbeiten. Abgedeckt mit einem feuchten Geschirrtuch lässt man den Teig dann eine knappe halbe Stunde an der Wärme gehen. Danach wird der Teig einmal durchgeknetet und nochmals abgedeckt für weitere 30 Minuten zum Ruhen beiseite gestellt.
+          <br><br>
+          In den Ruhezeiten kann schon der Belag vorbereitet werden: Dazu die Zwiebeln schälen und mit den gewaschenen Tomaten sehr fein würfeln. Die geschälten Knoblauchzehen werden gepresst und die gewaschene Petersilie fein gehackt. Dann mit dem Faschierten, Tomatenmark, Olivenöl, Pfeffer, Salz und den Kräutern gut vermischen.
+          <br><br>
+          Außerdem können zwei Bleche mit Backpapier ausgelegt und der Ofen auf 200°C vorgeheizt werden. Dann den fertigen Teig in 4 kleine Kugeln teilen (ca. 80 bis 100 g) und auf einer bemehlten Fläche zu ca. 3-5 Millimeter dünnen Fladen ausrollen. Je nach Blechgröße einen oder zwei Fladen darauf geben und jeweils eineinhalb Esslöffel Fleischmasse darauf verteilen.
+         <br><br>
+          Nun alle Fladen im Ofen für ca. 10 bis 12 Minuten backen bis der Teig am Rand langsam knusprig wird und eine leichte Bräunung erhält. Die fertigen Lahmacun können warm oder ausgekühlt gegessen werden.
+          <br><br>
+          <i>Für extra Schärfe:</i> mit Chilli garnieren!
+        </p>
+        </div>
+
+        <div class="recipe-creator">
+          <h3>Rezept erstellt von</h3>
+         
+          <div class="creator-info">
+          <img src="./img/profile.png" alt="Profilfoto vom Ersteller des Rezeptes">
+          <span>Marion</span>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/logo_white.png" alt="">
+        <div class="social-media">
+            <a href="">
+                <img src="./img/facebook_logo.png" alt="">
+            </a>
+            <a href="">
+                <img src="./img/instagrram_logo.png" alt="">
+
+            </a>
+            <a href="">
+                <img src="./img/tiktok_logo.png" alt="">
+            </a>
+
+        </div>
+    </footer>
+  </body>
+<script src="script.js"></script>
+  
+</body>
+</html>
