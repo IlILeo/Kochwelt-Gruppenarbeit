@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="kontaktseite.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img class="header-img" src="./img/logo.png" alt="Logo Startseite" />
+      </div>
+      <nav>
+        <a href="">Start</a>
+        <a href="">Rezept des Tages</a>
+        <a href="./kontaktseite.html">Kontakt</a>
+        <a href="">Impressum</a>
+      </nav>
+    </header>
+
+    <div class="contact">
+      <h2>Kontaktiere uns</h2>
+      <form class="contact-input" onsubmit="sendMail(event)">
+        <label>
+          Dein Name:
+          <input class="input-field" type="Text" name="Name" required />
+        </label>
+        <label>
+          Deine E-Mail:
+          <input class="input-field" type="email" name="Absender" required />
+        </label>
+        <label>
+          Deine Nachricht:
+          <textarea name="message" required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <div class="contact-button">
+          <a href="./send_mail.html">
+            <button type="submit">Abschicken</button>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <img src="./img/logo_white.png" alt="" />
+      <div class="social-media">
+        <a href="">
+          <img src="./img/facebook_logo.png" alt="Facebook-Icon" />
+        </a>
+        <a href="">
+          <img src="./img/instagrram_logo.png" alt="Instagram-Icon" />
+        </a>
+        <a href="">
+          <img src="./img/tiktok_logo.png" alt="TikTok-Icon" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
