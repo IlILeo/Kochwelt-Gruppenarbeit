@@ -87,6 +87,14 @@ button {
   height: 30px;
   font-weight: normal;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.none-underline {
+  text-decoration: none;
 }
 
 button:hover {
@@ -310,11 +318,16 @@ img {
   object-fit: cover;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
     margin-bottom: 16px;
     font-size: 11px;
+    height: 80px;
     /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
@@ -333,15 +346,17 @@ img {
   }
 
   header img {
-    height: 20px;
+    height: 32px;
   }
 
   nav {
-    gap: 6px;
+    display: none;
   }
 
   nav a:hover {
     text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+
   }
 
   button {
@@ -422,6 +437,27 @@ img {
   .section-recipe {
     padding: 10px 40px;
   }
+
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
+
+
+
 }
 
 @media (min-width: 700px) and (max-width: 950px) {
@@ -479,4 +515,13 @@ img {
   .social-media img {
     height: 25px;
   }
+
+  .mainMenu {
+    display: initial;
+  }
+
+  #toggle-bar {
+    display: none;
+  }
+
 }
