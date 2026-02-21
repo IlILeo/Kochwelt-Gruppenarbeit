@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt - Lahmacun</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="recipes.css" />
     
   </head>
   <body>
     <header>
       <div class="header-logo">
+        <a href="./index.html">
         <img class="header-img" src="./img/logo.png" alt="Logo Startseite" />
+      </a>
       </div>
       <nav>
         <a href="./index.html">Start</a>
-        <a href="">Rezept des Tages</a>
+        <a href="./rezept_des_tages.html">Rezept des Tages</a>
         <a href="./kontaktseite.html">Kontakt</a>
         <a href="./Impressum.html">Impressum</a>
       </nav>
@@ -48,7 +51,7 @@
             <span>Zutaten für:</span>
             <input type="number" id="portion-input" value="4" min="1" 
             style="width: 60px; padding: 5px; border: none; outline: none; text-align: center;">
-            <button onclick="berechneMengen()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
+            <button onclick="calculatedQuantity()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
 
         </div>
           <ul id="ingredient-list" style="list-style: none;">
@@ -114,7 +117,7 @@
     </section>
 
     <footer>
-        <img src="./img/logo_white.png" alt="">
+        <img src="./img/Logo.white.png" alt="small white logo" />
         <div class="social-media">
             <a href="">
                 <img src="./img/facebook_logo.png" alt="">

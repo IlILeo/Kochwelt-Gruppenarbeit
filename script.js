@@ -1,36 +1,36 @@
-function berechneMengen() {
-  const input = document.getElementById('portion-input');
-  let neuePortionen = parseFloat(input.value);
-  const basisPortionen = 4;
+function calculatedQuantity() {
+  const input = document.getElementById("portion-input");
+  let newPortion = parseFloat(input.value);
+  const basicPortion = 4;
 
   // Schutz: Nicht ins Minus gehen oder Null erlauben
-  if (neuePortionen < 1 || neuePortionen > 20 || isNaN(neuePortionen)) {
+  if (newPortion < 1 || newPortion > 20 || isNaN(newPortion)) {
     alert("Bitte eine Zahl zwischen 1 und 20 eingeben.");
-    input.value = basisPortionen;
-    neuePortionen = basisPortionen;
+    input.value = basicPortion;
+    newPortion = basicPortion;
   }
 
-
-
   // Alle Listen-Elemente durchgehen
-  const zutaten = document.querySelectorAll('#ingredient-list li');
+  const ingredients = document.querySelectorAll("#ingredient-list li");
 
-  zutaten.forEach(li => {
-    const basisMenge = parseFloat(li.getAttribute('data-menge'));
-    const einheit = li.getAttribute('data-einheit');
+  ingredients.forEach((li) => {
+    const basicQuantity = parseFloat(li.getAttribute("data-menge"));
+    const unit = li.getAttribute("data-einheit");
 
     // Die Zutat finden (alles Text nach der ursprünglichen Zahl und Einheit)
     // Wir nehmen hier den ursprünglichen Textinhalt und säubern ihn
-    const zutatName = li.textContent.split(einheit)[1] || "";
+    const ingredienceName = li.textContent.split(unit)[1] || "";
 
     // Berechnung: (Grundmenge / 4) * neue Portionen
-    let neueMenge = (basisMenge / basisPortionen) * neuePortionen;
+    let newQuantity = (basicQuantity / basicPortion) * newPortion;
 
     // Ergebnis runden (auf 2 Nachkommastellen, falls nötig)
-    neueMenge = Number.isInteger(neueMenge) ? neueMenge : neueMenge.toFixed(2);
+    newQuantity = Number.isInteger(newQuantity)
+      ? newQuantity
+      : newQuantity.toFixed(2);
 
     // Inhalt aktualisieren
-    li.innerText = `${neueMenge} ${einheit} ${zutatName.trim()}`;
+    li.innerText = `${newQuantity} ${unit} ${ingredienceName.trim()}`;
   });
 }
 
@@ -42,12 +42,13 @@ function sendMail(event) {
     method: "POST",
     body: new FormData(event.target),
     headers: {
-      'Accept': 'application/json'
-    }
-  }).then(() => {
-    window.location.href = "./send_mail.html";
-  }).catch((error) => {
-    console.log(error);
-  });
+      Accept: "application/json",
+    },
+  })
+    .then(() => {
+      window.location.href = "./send_mail.html";
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
-
