@@ -6,9 +6,26 @@
   font-family: "Raleway";
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+img {
+  border-radius: 8px;
+}
+
 h2 {
   font-weight: bold;
   font-size: 20px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -17,11 +34,19 @@ h3 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 120px 10px 120px;
   height: 100px;
   width: 100%;
   box-shadow: 0 0px 6px rgb(0, 0, 0, 30%);
+  margin-bottom: 32px;
+}
+
+.header-content {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header img {
@@ -33,6 +58,8 @@ header img {
   display: flex;
   align-items: center;
 }
+
+
 
 .txt {
   padding: 32px 120px;
@@ -75,6 +102,7 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all 125ms ease-in-out;
 }
 
 nav a:hover {
@@ -84,6 +112,38 @@ nav a:hover {
   text-underline-offset: 10px;
 }
 
+button {
+  color: white;
+  background-color: #008000;
+  border: none;
+  width: 125px;
+  height: 30px;
+  font-weight: normal;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: all 125ms ease-in-out;
+}
+
+.none-underline {
+  text-decoration: none;
+
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  background-color: #2fac44;
+  transform: translateY(5px);
+}
+
+button:active {
+  transform: translateY(0);
+  transition: all 75ms ease-in-out;
+}
+
 footer {
   background-color: #403b3b;
   padding: 30px 120px;
@@ -91,15 +151,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  margin-top: auto;
 }
 
 .footer-content {
   width: 100%;
   max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer img {
@@ -115,6 +175,146 @@ footer img {
 
 .social-media img {
   height: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  header {
+    padding: 10px 40px;
+    margin-bottom: 16px;
+    font-size: 11px;
+    height: 80px;
+    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .header-content {
+    max-width: 510px;
+    width: 100%;
+  }
+
+  header img {
+    height: 32px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a:hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+
+  footer {
+    padding: 10px 40px;
+    height: 60px;
+  }
+
+  .footer-content {
+    max-width: 510px;
+  }
+
+  footer img {
+    height: 25px;
+  }
+
+  .social-media img {
+    height: 15px;
+  }
+
+  /* bis hier: Header&Footer */
+
+  .img-croissant {
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .main-section {
+    padding: 10px 40px;
+  }
+
+  .main-content {
+    max-width: 510px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-layout {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .recipe-section {
+    padding: 10px 40px;
+  }
+
+  .recipe-content {
+    max-width: 510px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-small {
+    height: 80px;
+  }
+
+  .versus-section {
+    padding: 10px 40px;
+  }
+
+  .versus-text {
+    gap: 12px;
+    padding-top: 6px;
+    font-size: 16px;
+    flex-direction: column-reverse;
+  }
+
+  .versus-content {
+    max-width: 510px;
+  }
+
+  .section-recipe {
+    padding: 10px 40px;
+  }
+
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 950px) {

@@ -69,6 +69,7 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all 125ms ease-in-out;
 }
 
 nav a:hover {
@@ -81,7 +82,6 @@ nav a:hover {
 button {
   color: white;
   background-color: #008000;
-  transition: all 0.3s ease;
   border: none;
   width: 125px;
   height: 30px;
@@ -91,16 +91,24 @@ button {
   align-items: center;
   text-decoration: none;
   justify-content: center;
+  transition: all 125ms ease-in-out;
 }
 
 .none-underline {
   text-decoration: none;
+
 }
 
 button:hover {
   cursor: pointer;
   transform: translateY(-5px);
   background-color: #2fac44;
+  transform: translateY(5px);
+}
+
+button:active {
+  transform: translateY(0);
+  transition: all 75ms ease-in-out;
 }
 
 footer {
@@ -333,7 +341,7 @@ img {
 
   h2 {
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 16px;
   }
 
   h3 {
@@ -383,6 +391,24 @@ img {
     height: 15px;
   }
 
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
+
   /* bis hier: Header&Footer */
 
   .img-croissant {
@@ -413,6 +439,7 @@ img {
   .recipe-content {
     max-width: 510px;
     flex-direction: column;
+    gap: 20px;
   }
 
   .img-small {
@@ -438,23 +465,7 @@ img {
     padding: 10px 40px;
   }
 
-  .mainMenu {
-    display: none;
-  }
 
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-
-
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 
 
 
