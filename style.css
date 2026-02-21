@@ -34,7 +34,7 @@ h3 {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 120px 10px 120px;
   height: 100px;
   width: 100%;
