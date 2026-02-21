@@ -185,8 +185,8 @@ footer img {
   header {
     padding: 10px 40px;
     margin-bottom: 16px;
-    font-size: 11px;
-    height: 80px;
+    font-size: 16px;
+    height: 100px;
     /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
@@ -335,4 +335,11 @@ footer img {
   .social-media img {
     height: 25px;
   }
+}
+
+@media (min-width: 951px) {
+  #toggle-bar {
+    display: none;
+  }
+
 }

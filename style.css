@@ -330,12 +330,13 @@ img {
   display: none;
 }
 
+
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
     margin-bottom: 16px;
-    font-size: 11px;
-    height: 80px;
+    font-size: 16px;
+    height: 100px;
     /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
@@ -465,10 +466,6 @@ img {
     padding: 10px 40px;
   }
 
-
-
-
-
 }
 
 @media (min-width: 700px) and (max-width: 950px) {
@@ -531,6 +528,13 @@ img {
     display: initial;
   }
 
+  #toggle-bar {
+    display: none;
+  }
+
+}
+
+@media (min-width: 951px) {
   #toggle-bar {
     display: none;
   }
