@@ -138,3 +138,70 @@ footer img {
     flex: 1;
 
 }
+
+@media (min-width: 320px) and (max-width: 700px) {
+    header {
+        padding: 10px 40px;
+        margin-bottom: 16px;
+        font-size: 11px;
+        /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
+    }
+
+    h2 {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .header-content {
+        max-width: 510px;
+        width: 100%;
+    }
+
+    header img {
+        height: 20px;
+    }
+
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a:hover {
+        text-decoration-thickness: 2px;
+    }
+
+    button {
+        width: 100px;
+        height: 25px;
+        font-size: 16px;
+
+    }
+
+
+    footer {
+        padding: 10px 40px;
+        height: 60px;
+    }
+
+    .footer-content {
+        max-width: 510px;
+    }
+
+    footer img {
+        height: 25px;
+    }
+
+    .social-media img {
+        height: 15px;
+    }
+
+    .send-mail-span {
+        margin-inline: 90px;
+        margin-block: 100px;
+        height: 150px;
+    }
+}

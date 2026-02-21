@@ -310,6 +310,120 @@ img {
   object-fit: cover;
 }
 
+@media (min-width: 320px) and (max-width: 700px) {
+  header {
+    padding: 10px 40px;
+    margin-bottom: 16px;
+    font-size: 11px;
+    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .header-content {
+    max-width: 510px;
+    width: 100%;
+  }
+
+  header img {
+    height: 20px;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  nav a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+
+  footer {
+    padding: 10px 40px;
+    height: 60px;
+  }
+
+  .footer-content {
+    max-width: 510px;
+  }
+
+  footer img {
+    height: 25px;
+  }
+
+  .social-media img {
+    height: 15px;
+  }
+
+  /* bis hier: Header&Footer */
+
+  .img-croissant {
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .main-section {
+    padding: 10px 40px;
+  }
+
+  .main-content {
+    max-width: 510px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-layout {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .recipe-section {
+    padding: 10px 40px;
+  }
+
+  .recipe-content {
+    max-width: 510px;
+    flex-direction: column;
+  }
+
+  .img-small {
+    height: 80px;
+  }
+
+  .versus-section {
+    padding: 10px 40px;
+  }
+
+  .versus-text {
+    gap: 12px;
+    padding-top: 6px;
+    font-size: 16px;
+    flex-direction: column-reverse;
+  }
+
+  .versus-content {
+    max-width: 510px;
+  }
+
+  .section-recipe {
+    padding: 10px 40px;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 950px) {
   header {
     padding: 10px 60px 10px 60px;
