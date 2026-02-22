@@ -96,7 +96,6 @@ button {
 
 .none-underline {
   text-decoration: none;
-
 }
 
 button:hover {
@@ -330,7 +329,6 @@ img {
   display: none;
 }
 
-
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
@@ -365,7 +363,6 @@ img {
   nav a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-
   }
 
   button {
@@ -373,7 +370,6 @@ img {
     padding: 8px;
     font-size: 16px;
   }
-
 
   footer {
     padding: 10px 40px;
@@ -464,7 +460,6 @@ img {
   .section-recipe {
     padding: 10px 40px;
   }
-
 }
 
 @media (min-width: 700px) and (max-width: 950px) {
@@ -530,12 +525,10 @@ img {
   #toggle-bar {
     display: none;
   }
-
 }
 
 @media (min-width: 951px) {
   #toggle-bar {
     display: none;
   }
-
 }
