@@ -6,32 +6,15 @@
   font-family: "Raleway";
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
 main {
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
-
-img {
-  border-radius: 8px;
 }
 
 h2 {
   font-weight: bold;
   font-size: 20px;
-  padding-bottom: 20px;
-}
-
-h3 {
-  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 header {
@@ -61,39 +44,6 @@ header img {
   align-items: center;
 }
 
-.txt {
-  padding: 32px 120px;
-  text-decoration: none;
-  color: black;
-  display: flex;
-  flex-direction: column;
-}
-
-.txt a {
-  text-decoration: none;
-  color: black;
-}
-
-.txt a:hover {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-.adress {
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-
-.vertreten {
-  font-weight: bold;
-}
-
-.kontakt {
-  margin-top: 48px;
-  margin-bottom: 48px;
-}
-
 nav {
   display: flex;
   gap: 16px;
@@ -114,6 +64,10 @@ nav a:hover {
   text-underline-offset: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 button {
   color: white;
   background-color: #008000;
@@ -132,14 +86,14 @@ button {
   text-decoration: none;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: #2fac44;
-}
-
-button:active {
-  transform: translateY(0);
-  transition: all 75ms ease-in-out;
+.data-protection {
+  display: flex;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 
 footer {
@@ -175,10 +129,11 @@ footer img {
   height: 32px;
 }
 
-.hidden {
-  display: none;
+@media (min-width: 951px) {
+  #toggle-bar {
+    display: none;
+  }
 }
-
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
@@ -203,7 +158,7 @@ footer img {
   }
 
   header img {
-    height: 32px;
+    height: 43px;
   }
 
   nav {
@@ -221,119 +176,67 @@ footer img {
     font-size: 16px;
   }
 
-  footer {
-    padding: 10px 40px;
-    height: 60px;
-  }
-
-  .footer-content {
-    max-width: 510px;
-  }
-
-  footer img {
-    height: 25px;
-  }
-
-  .social-media img {
-    height: 15px;
-  }
-
-  /* bis hier: Header&Footer */
-
-  .img-croissant {
-    height: 160px;
-    object-fit: cover;
-  }
-
-  .main-section {
+  .data-protection {
     padding: 10px 40px;
   }
-
-  .main-content {
-    max-width: 510px;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-layout {
-    gap: 15px;
-    font-size: 16px;
-  }
-
-  .recipe-section {
-    padding: 10px 40px;
-  }
-
-  .recipe-content {
-    max-width: 510px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .img-small {
-    height: 80px;
-  }
-
-  .versus-section {
-    padding: 10px 40px;
-  }
-
-  .versus-text {
-    gap: 12px;
-    padding-top: 6px;
-    font-size: 16px;
-    flex-direction: column-reverse;
-  }
-
-  .versus-content {
-    max-width: 510px;
-  }
-
-  .section-recipe {
-    padding: 10px 40px;
-  }
-
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
+  .data-protection-media {
+    word-wrap: break-word;
   }
 }
 
-@media (min-width: 700px) and (max-width: 950px) {
-  header {
-    padding: 10px 60px 10px 60px;
-    margin-bottom: 16px;
-  }
-
-  footer {
-    padding: 15px 60px;
-    height: 120px;
-  }
-
-  footer img {
-    height: 35px;
-  }
-
-  .social-media img {
-    height: 25px;
-  }
+footer {
+  padding: 10px 40px;
+  height: 60px;
 }
 
-@media (min-width: 951px) {
-  #toggle-bar {
-    display: none;
-  }
+.footer-content {
+  max-width: 510px;
+}
+
+footer img {
+  height: 25px;
+}
+
+.social-media img {
+  height: 15px;
+}
+
+.mainMenu {
+  display: none;
+}
+
+.mainMenu.hamburger {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: end;
+}
+
+.tootle-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* bis hier: Header&Footer */
+
+.img-croissant {
+  height: 160px;
+  object-fit: cover;
+}
+
+.main-section {
+  padding: 10px 40px;
+}
+
+.main-content {
+  max-width: 510px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout {
+  gap: 15px;
+  font-size: 16px;
 }

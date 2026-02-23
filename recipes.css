@@ -88,12 +88,10 @@ button {
   width: 125px;
   height: 30px;
   font-weight: normal;
-  border-radius: 5px;
 }
 
 button:hover {
   cursor: pointer;
-  transform: translateY(-5px);
   background-color: #2fac44;
 }
 
@@ -102,7 +100,7 @@ footer {
   padding: 30px 120px;
   height: 240px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: auto;
@@ -130,22 +128,16 @@ footer img {
   height: 32px;
 }
 
-.Recipe-hero-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
 .full-with-img {
   width: 100%;
-  height: 70%;
+  height: 200px;
   object-fit: cover;
 }
 
 .recipe-icon-container {
   display: flex;
   gap: 50px;
-  padding: 30px 0;
+  padding: 30px 0 40px;
 }
 
 img {
@@ -165,11 +157,10 @@ img {
   border-radius: 0;
 }
 
-.Portion-button {
+.portion-button {
+  box-shadow: 0 0px 6px rgb(0, 0, 0, 30%);
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  padding: 10px 0 20px;
 }
 
 .preparation {
@@ -182,33 +173,6 @@ img {
 
 .preparation h3 {
   padding-bottom: 8px;
-}
-
-.recipe-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-left: 0;
-  padding-bottom: 10px;
-}
-
-.recipe-table td {
-  padding: 0 20px 0 0;
-  border: none;
-}
-
-.recipe-table td:last-child {
-  padding-right: 0;
-}
-
-.border-box {
-  border: 1px solid #ccc;
-  padding: 2px;
-  display: inline-block;
-  border-radius: 0;
-}
-
-.kitchen-sets {
-  padding-bottom: 20px;
 }
 
 .recipe-creator {
@@ -291,6 +255,29 @@ img {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: end;
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .portion-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 30px;
+  }
 
   button {
     font-size: 16px;
@@ -309,6 +296,10 @@ img {
     gap: 10px;
     padding: 10px 0 50px;
     flex-direction: column;
+  }
+  .ingredient-list {
+    list-style: none;
+    padding-top: 50px;
   }
 
   #ingredient-list li {
@@ -354,23 +345,6 @@ img {
 
   .social-media img {
     height: 15px;
-  }
-
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
   }
 }
 

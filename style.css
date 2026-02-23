@@ -86,7 +86,6 @@ button {
   width: 125px;
   height: 30px;
   font-weight: normal;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -100,9 +99,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: translateY(-5px);
   background-color: #2fac44;
-  transform: translateY(5px);
 }
 
 button:active {

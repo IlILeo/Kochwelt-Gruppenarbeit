@@ -57,15 +57,17 @@
         
       </div>
       
-      <div class="Portion-button" >
-            <span>Zutaten für:</span>
+      <div class="portion-button">
+          <div> 
+        <span>Zutaten für:</span>
             <input type="number" id="portion-input" value="4" min="1" 
-            style="width: 60px; padding: 5px; border: none; outline: none; text-align: center;">
+            style="width: 100px; padding: 7px 5px; border: 1px solid #efefef; outline: none; text-align: center;">
+            </div> 
             <button onclick="calculatedQuantity()" style="padding: 5px 10px; cursor: pointer;">Portionen</button>
 
         </div>
-          <ul id="ingredient-list" style="list-style: none;">
-            <li data-menge="200" data-einheit="g"> 200 g Mehl</li>
+          <ul class="ingredient-list" id="ingredient-list">
+            <li data-menge="200" data-einheit="g">200 g Mehl</li>
             <li data-menge="21" data-einheit="g">21 g frischer Germ</li>
             <li data-menge="25" data-einheit="g">25 g Zucker</li>
             <li data-menge="125" data-einheit="ml">125 ml lauwarme Milch</li>
@@ -91,16 +93,7 @@
             <p>40 min. Koch & Ruhezeit</p>
             </div>
           </div>
-          <div class="kitchen-sets">
-            <h3>Benötigte Küchenuntensilien</h3>
-          <table class="recipe-table">
-          <tr>
-          <td><span class="border-box">Arbeitsmatte</span></td>
-          <td><span class="border-box">Schüssel</span></td>
-          <td><span class="border-box">Backblech</span></td>
-          </tr>
-          </table>
-          </div>
+          
 
           <p>
           Einen Teig bereiten, indem man das Mehl mit der Milch, der Butter, dem Zucker und dem Salz gut abrührt. Danach die Germ kurz in lauwarmem Wasser auflösen und darunterrühren. Alles zu einem festen Germteig kneten, mit einem Geschirrtuch zudecken und 20 Minuten rasten <br></br>
