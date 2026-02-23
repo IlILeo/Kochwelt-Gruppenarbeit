@@ -110,7 +110,7 @@ button:active {
 footer {
   background-color: #403b3b;
   padding: 30px 120px;
-  height: 240px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ footer img {
 
 .main-section {
   display: flex;
-  padding: 30px 120px;
+  padding: 28px 120px 60px;
   width: 100%;
   justify-content: center;
 }
@@ -329,9 +329,9 @@ img {
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
-    margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
+    margin-bottom: 16px;
     /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
@@ -344,10 +344,6 @@ img {
     font-size: 18px;
   }
 
-  .header-content {
-    max-width: 510px;
-    width: 100%;
-  }
 
   header img {
     height: 43px;
@@ -370,19 +366,14 @@ img {
 
   footer {
     padding: 10px 40px;
-    height: 60px;
-  }
-
-  .footer-content {
-    max-width: 510px;
   }
 
   footer img {
-    height: 25px;
+    height: 35px;
   }
 
   .social-media img {
-    height: 15px;
+    height: 28px;
   }
 
   .mainMenu {
@@ -411,11 +402,10 @@ img {
   }
 
   .main-section {
-    padding: 10px 40px 50px;
+    padding: 9px 40px 25px;
   }
 
   .main-content {
-    max-width: 510px;
     gap: 8px;
     display: flex;
     flex-direction: column;
@@ -427,11 +417,10 @@ img {
   }
 
   .recipe-section {
-    padding: 50px 40px 50px;
+    padding: 25px 40px 25px;
   }
 
   .recipe-content {
-    max-width: 510px;
     flex-direction: column;
     gap: 20px;
   }
@@ -441,31 +430,24 @@ img {
   }
 
   .versus-section {
-    padding: 10px 40px;
+    padding: 25px 40px 25px;
   }
 
   .versus-text {
-    gap: 12px;
+    gap: 20px;
     padding-top: 6px;
     font-size: 16px;
     flex-direction: column-reverse;
   }
 
-  .versus-content {
-    max-width: 510px;
-  }
-
-  .section-recipe {
-    padding: 10px 40px;
-  }
 }
 
 @media (min-width: 700px) and (max-width: 950px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 60px;
     margin-bottom: 16px;
     font-size: 16px;
-    height: 120px;
+    height: 104px;
     /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
@@ -478,10 +460,6 @@ img {
     font-size: 18px;
   }
 
-  .header-content {
-    max-width: 510px;
-    width: 100%;
-  }
 
   header img {
     height: 43px;
@@ -503,7 +481,7 @@ img {
   }
 
   .main-section {
-    padding: 10px 40px 50px;
+    padding: 14px 60px 30px;
   }
 
   .main-layout {
@@ -511,24 +489,24 @@ img {
   }
 
   .recipe-section {
-    padding: 10px 40px;
+    padding: 30px 60px 30px;
   }
 
-  .section-recipe footer {
-    padding: 10px 40px;
-    height: 60px;
+  .versus-section {
+    padding: 30px 60px 30px;
   }
 
-  .footer-content {
-    max-width: 510px;
+
+  footer {
+    padding: 10px 60px;
   }
 
   footer img {
-    height: 25px;
+    height: 40px;
   }
 
   .social-media img {
-    height: 15px;
+    height: 28px;
   }
 
   .mainMenu {
