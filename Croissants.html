@@ -34,6 +34,7 @@
 
     
         <main>
+          <section class="main-section">
       <div class="Recipe-hero-container">
             <h2>Französische Croissants</h2>
             <img class="full-with-img" src="./img/croissant.jpg" alt="Foto Tiramisu">
@@ -57,15 +58,19 @@
         
       </div>
       
-      <div class="portion-button">
-          <div> 
-        <span>Zutaten für:</span>
-            <input type="number" id="portion-input" value="4" min="1" 
-            style="width: 100px; padding: 7px 5px; border: 1px solid #efefef; outline: none; text-align: center;">
-            </div> 
-            <button onclick="calculatedQuantity()" style="padding: 5px 10px; cursor: pointer;">Portionen</button>
-
-        </div>
+      <div class="portion-button"; >
+         
+        <div class="portion-content">
+        <span class="portion-span" >Zutaten für:</span>
+          <div class="second-portion-content">
+        <input class="portion-layout" type="number" id="portion-input" value="4" min="1" 
+            >
+            
+            <button onclick="calculatedQuantity()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
+         </div>
+         </div>
+          
+       </div>
           <ul class="ingredient-list" id="ingredient-list">
             <li data-menge="200" data-einheit="g">200 g Mehl</li>
             <li data-menge="21" data-einheit="g">21 g frischer Germ</li>
@@ -110,6 +115,7 @@
           <span>Leonhard</span>
           </div>
         </div>
+        </section>
         </main>
    
 

@@ -395,6 +395,7 @@ img {
     flex-direction: column;
     gap: 2px;
     text-align: end;
+    justify-content: center;
   }
 
   .tootle-menu {
@@ -410,7 +411,7 @@ img {
   }
 
   .main-section {
-    padding: 10px 40px;
+    padding: 10px 40px 50px;
   }
 
   .main-content {
@@ -426,7 +427,7 @@ img {
   }
 
   .recipe-section {
-    padding: 10px 40px;
+    padding: 50px 40px 50px;
   }
 
   .recipe-content {
@@ -461,71 +462,100 @@ img {
 
 @media (min-width: 700px) and (max-width: 950px) {
   header {
-    padding: 10px 60px 10px 60px;
+    padding: 10px 40px;
     margin-bottom: 16px;
+    font-size: 16px;
+    height: 120px;
+    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
-    padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 16px;
   }
 
-  .img-croissant {
-    height: 180px;
+  h3 {
+    font-size: 18px;
   }
 
-  .main-layout {
-    gap: 35px;
+  .header-content {
+    max-width: 510px;
+    width: 100%;
+  }
+
+  header img {
+    height: 43px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a:hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
   }
 
   .main-section {
-    padding: 20px 60px;
+    padding: 10px 40px 50px;
   }
 
-  .main-content {
-    gap: 16px;
+  .main-layout {
+    gap: 40px;
   }
 
   .recipe-section {
-    padding: 20px 60px;
+    padding: 10px 40px;
   }
 
-  .img-small {
-    height: 120px;
+  .section-recipe footer {
+    padding: 10px 40px;
+    height: 60px;
   }
 
-  .versus-section {
-    padding: 20px 60px;
-  }
-
-  .versus-text {
-    gap: 16px;
-    padding-top: 8px;
-  }
-
-  footer {
-    padding: 15px 60px;
-    height: 120px;
+  .footer-content {
+    max-width: 510px;
   }
 
   footer img {
-    height: 35px;
-  }
-
-  .social-media img {
     height: 25px;
   }
 
-  .mainMenu {
-    display: initial;
+  .social-media img {
+    height: 15px;
   }
 
-  #toggle-bar {
+  .mainMenu {
     display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: end;
+    justify-content: center;
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (min-width: 951px) {
   #toggle-bar {
     display: none;
+  }
+
+  .main-layout {
+    gap: 40px;
   }
 }

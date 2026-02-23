@@ -56,15 +56,19 @@
         
       </div>
       
-      <div class="portion-button" >
-           <div>
-        <span>Zutaten für:</span>
-            <input type="number" id="portion-input" value="4" min="1" 
-            style="width: 100px; padding: 7px 5px; border: 1px solid #efefef; outline: none; text-align: center;">
-            </div> 
+    <div class="portion-button"; >
+         
+        <div class="portion-content">
+        <span class="portion-span" >Zutaten für:</span>
+          <div class="second-portion-content">
+        <input class="portion-layout" type="number" id="portion-input" value="4" min="1" 
+            >
+            
             <button onclick="calculatedQuantity()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
-
-        </div>
+         </div>
+         </div>
+          
+       </div>
           <ul id="ingredient-list" style="list-style: none;">
             
             <li data-menge="400" data-einheit="g"> 400 g Spaghetti</li>
@@ -75,7 +79,7 @@
             <li data-menge="2" data-einheit="Brise">2 Brise(n) Pfeffer</li>
             <li data-menge="2" data-einheit="Brise">2 Brise(n) Salz</li>
           </ul>  
-        
+      </div>
 
       <div class="preparation">
           <h2>Zubereitung</h2>

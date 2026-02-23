@@ -158,9 +158,31 @@ img {
 }
 
 .portion-button {
-  box-shadow: 0 0px 6px rgb(0, 0, 0, 30%);
   display: flex;
   padding: 10px 0 20px;
+  border-top: 3px solid #efefef;
+}
+
+.portion-content {
+  display: flex;
+  align-items: center;
+}
+
+.portion-span {
+  display: flex;
+  padding-right: 10px;
+}
+
+.second-portion-content {
+  display: flex;
+}
+
+.portion-layout {
+  padding: 7px 5px;
+  border: 1px solid #efefef;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .preparation {
@@ -202,7 +224,6 @@ img {
 }
 
 #ingredient-list li {
-  margin-bottom: 20px;
   padding: 15px 15px;
   border-radius: 10px;
   display: block;
@@ -265,6 +286,7 @@ img {
     flex-direction: column;
     gap: 2px;
     text-align: end;
+    justify-content: center;
   }
 
   .tootle-menu {
@@ -275,8 +297,25 @@ img {
   .portion-button {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    padding: 0 0 30px;
+    padding-top: 10px;
+    border-top: 3px solid #efefef;
+  }
+
+  .portion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portion-layout {
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid #efefef;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
   }
 
   button {
@@ -332,25 +371,23 @@ img {
 
   footer {
     padding: 10px 40px;
-    height: 60px;
   }
 
   .footer-content {
     max-width: 510px;
-  }
-
-  footer img {
-    height: 25px;
-  }
-
-  .social-media img {
-    height: 15px;
   }
 }
 
 @media (min-width: 951px) {
   #toggle-bar {
     display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .main-section {
+    width: 100%;
+    padding: 10px 40px;
   }
 }
 
@@ -391,5 +428,144 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+  header {
+    padding: 10px 40px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    height: 120px;
+    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .header-content {
+    max-width: 510px;
+    width: 100%;
+  }
+
+  header img {
+    height: 43px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a:hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .portion-button {
+    display: flex;
+    margin-block: 0;
+    gap: 10px;
+    padding: 0 0 30px;
+  }
+
+  .portion-content {
+    padding: 10px 0 20px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px 40px;
+    width: 100%;
+  }
+
+  .recipe-icon-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0 50px;
+    flex-direction: column;
+  }
+  .ingredient-list {
+    list-style: none;
+    padding-top: 50px;
+  }
+
+  #ingredient-list li {
+    margin-bottom: 5px;
+  }
+
+  .recipe-icon-content:last-child {
+    margin-bottom: 0;
+  }
+
+  .preparation {
+    padding: 50px 0;
+  }
+
+  .recipe-table,
+  .recipe-table tr,
+  .recipe-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .recipe-table td {
+    padding: 5px 0;
+  }
+
+  .border-box {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-content {
+    max-width: 510px;
+  }
+
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: end;
+    justify-content: center;
+  }
+
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .portion-content {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .portion-button {
+    display: flex;
+    align-items: flex-start;
   }
 }

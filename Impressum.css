@@ -128,18 +128,19 @@ button {
   transition: all 125ms ease-in-out;
 }
 
-.none-underline {
-  text-decoration: none;
-}
-
 button:hover {
   cursor: pointer;
   background-color: #2fac44;
 }
 
 button:active {
-  transform: translateY(0);
   transition: all 75ms ease-in-out;
+}
+
+.none-underline,
+.none-underline:hover {
+  text-decoration: none !important;
+  outline: none;
 }
 
 footer {
