@@ -116,7 +116,6 @@ footer {
   align-items: center;
   width: 100%;
   margin-top: auto;
-
 }
 
 .copy-right {
@@ -371,17 +370,18 @@ img {
   footer {
     padding: 10px 40px;
     flex-direction: column-reverse;
-    ;
   }
 
   footer img {
-    height: 35px;
+    height: 32px;
   }
 
-
+  .social-media {
+    gap: 10px;
+  }
 
   .social-media img {
-    height: 28px;
+    height: 25px;
   }
 
   .mainMenu {
@@ -457,7 +457,7 @@ img {
   }
 
   .copy-right {
-    font-size: 11px;
+    font-size: 16px;
     justify-content: center;
   }
 }
