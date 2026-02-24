@@ -82,34 +82,6 @@ nav a:hover {
   text-underline-offset: 10px;
 }
 
-button {
-  color: white;
-  background-color: #008000;
-  border: none;
-  width: 125px;
-  height: 30px;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  justify-content: center;
-  transition: all 125ms ease-in-out;
-}
-
-.none-underline {
-  text-decoration: none;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #2fac44;
-}
-
-button:active {
-  transform: translateY(0);
-  transition: all 75ms ease-in-out;
-}
-
 .data-protection {
   display: flex;
   flex-direction: column;

@@ -105,11 +105,11 @@ nav a:hover {
   margin-bottom: 32px;
 }
 
-.vertreten {
+.represent {
   font-weight: bold;
 }
 
-.kontakt {
+.contact {
   margin-top: 48px;
   margin-bottom: 48px;
 }
@@ -252,7 +252,6 @@ footer img {
     margin-bottom: 16px;
     font-size: 16px;
     height: 104px;
-    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
