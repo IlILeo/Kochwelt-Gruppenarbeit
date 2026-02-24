@@ -122,9 +122,18 @@ footer img {
   height: 32px;
 }
 
+.hidden {
+  display: none;
+}
+@media (max-width: 400px) {
+  .header-img {
+    height: 39px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 700px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 60px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
@@ -139,15 +148,6 @@ footer img {
     font-size: 18px;
   }
 
-  .header-content {
-    max-width: 510px;
-    width: 100%;
-  }
-
-  header img {
-    height: 43px;
-  }
-
   nav {
     display: none;
   }
@@ -156,35 +156,11 @@ footer img {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
-
-  button {
-    font-size: 16px;
-    padding: 8px;
-    font-size: 16px;
-  }
-
   main {
-    padding: 10px 40px;
+    padding: 30px 60px;
+    width: 100%;
   }
 
-  .data-protection {
-    padding: 10px 40px;
-  }
-  .data-protection-media {
-    word-wrap: break-word;
-  }
-
-  footer {
-    padding: 10px 40px;
-  }
-
-  footer img {
-    height: 35px;
-  }
-
-  .social-media img {
-    height: 28px;
-  }
   .mainMenu {
     display: none;
   }
@@ -195,27 +171,31 @@ footer img {
     flex-direction: column;
     gap: 2px;
     text-align: end;
+    justify-content: center;
   }
 
+  .data-protection-media {
+    word-wrap: break-word;
+  }
   .tootle-menu {
     display: flex;
     align-items: center;
   }
 
-  .main-section {
-    padding: 10px 40px;
+  .data-protection-media footer {
+    padding: 10px 60px;
   }
 
-  .main-content {
-    max-width: 510px;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
+  footer {
+    padding: 10px 60px;
   }
 
-  .main-layout {
-    gap: 15px;
-    font-size: 16px;
+  footer img {
+    height: 35px;
+  }
+
+  .social-media img {
+    height: 28px;
   }
 }
 
@@ -236,17 +216,13 @@ footer img {
     font-size: 18px;
   }
 
-  header img {
-    height: 43px;
-  }
-
   nav {
     display: none;
   }
 
   nav a:hover {
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 2px;
   }
   main {
     padding: 30px 60px;

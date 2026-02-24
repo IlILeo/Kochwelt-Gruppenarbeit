@@ -278,10 +278,6 @@ footer img {
     font-size: 18px;
   }
 
-  header img {
-    height: 43px;
-  }
-
   nav {
     display: none;
   }
@@ -391,6 +387,12 @@ footer img {
   }
 }
 
+@media (max-width: 400px) {
+  .header-img {
+    height: 39px;
+  }
+}
+
 @media (min-width: 951px) {
   #toggle-bar {
     display: none;
@@ -456,10 +458,6 @@ footer img {
 
   h3 {
     font-size: 18px;
-  }
-
-  header img {
-    height: 43px;
   }
 
   nav {

@@ -178,12 +178,18 @@ footer img {
   display: none;
 }
 
+@media (max-width: 400px) {
+  .header-img {
+    height: 39px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 700px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 60px;
+    margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
-    margin-bottom: 16px;
   }
 
   h2 {
@@ -195,10 +201,6 @@ footer img {
     font-size: 18px;
   }
 
-  header img {
-    height: 43px;
-  }
-
   nav {
     display: none;
   }
@@ -207,17 +209,34 @@ footer img {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
-
-  button {
-    font-size: 16px;
-    padding: 8px;
-    font-size: 16px;
-  }
   main {
-    padding: 9px 40px 25px;
+    padding: 30px 60px;
+    width: 100%;
   }
+
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: end;
+    justify-content: center;
+  }
+
+  .data-protection-media {
+    word-wrap: break-word;
+  }
+  .tootle-menu {
+    display: flex;
+    align-items: center;
+  }
+
   footer {
-    padding: 10px 40px;
+    padding: 10px 60px;
   }
 
   footer img {
@@ -227,31 +246,13 @@ footer img {
   .social-media img {
     height: 28px;
   }
-
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 }
 @media (min-width: 700px) and (max-width: 950px) {
   header {
     padding: 10px 60px;
     margin-bottom: 16px;
     font-size: 16px;
-    height: 104px;
+    height: 120px;
   }
 
   h2 {
@@ -263,10 +264,6 @@ footer img {
     font-size: 18px;
   }
 
-  header img {
-    height: 43px;
-  }
-
   nav {
     display: none;
   }
@@ -275,39 +272,9 @@ footer img {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
-
-  button {
-    font-size: 16px;
-    padding: 8px;
-    font-size: 16px;
-  }
-
-  .main-section {
-    padding: 14px 60px 30px;
-  }
-
-  .main-layout {
-    gap: 40px;
-  }
-
-  .recipe-section {
-    padding: 30px 60px 30px;
-  }
-
-  .versus-section {
-    padding: 30px 60px 30px;
-  }
-
-  footer {
-    padding: 10px 60px;
-  }
-
-  footer img {
-    height: 40px;
-  }
-
-  .social-media img {
-    height: 28px;
+  main {
+    padding: 30px 60px;
+    width: 100%;
   }
 
   .mainMenu {
@@ -326,6 +293,10 @@ footer img {
   .tootle-menu {
     display: flex;
     align-items: center;
+  }
+
+  footer {
+    padding: 10px 60px;
   }
 }
 

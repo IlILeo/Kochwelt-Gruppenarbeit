@@ -330,7 +330,6 @@ img {
     font-size: 16px;
     height: 120px;
     margin-bottom: 16px;
-    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
@@ -343,7 +342,7 @@ img {
   }
 
   header img {
-    height: 43px;
+    height: 50px;
   }
 
   nav {
@@ -436,6 +435,12 @@ img {
   }
 }
 
+@media (max-width: 400px) {
+  .header-img {
+    height: 39px;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 950px) {
   header {
     padding: 10px 60px;
@@ -451,10 +456,6 @@ img {
 
   h3 {
     font-size: 18px;
-  }
-
-  header img {
-    height: 43px;
   }
 
   nav {

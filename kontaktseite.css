@@ -68,6 +68,7 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all 125ms ease-in-out;
 }
 
 nav a:hover {
@@ -90,7 +91,6 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: translateY(-5px);
   background-color: #2fac44;
 }
 
@@ -189,6 +189,12 @@ footer img {
   display: none;
 }
 
+@media (max-width: 400px) {
+  .header-img {
+    height: 39px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
@@ -204,10 +210,6 @@ footer img {
 
   h3 {
     font-size: 18px;
-  }
-
-  header img {
-    height: 32px;
   }
 
   nav {
@@ -277,8 +279,45 @@ footer img {
     padding: 10px 60px 10px 60px;
     margin-bottom: 16px;
   }
-  #toggle-bar {
+  header {
+    padding: 10px 40px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    height: 120px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  nav {
     display: none;
+  }
+
+  nav a:hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: end;
+    justify-content: center;
+  }
+  .tootle-menu {
+    display: flex;
+    align-items: center;
   }
 
   footer {
