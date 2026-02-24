@@ -165,6 +165,7 @@ footer img {
   height: 32px;
   border: 1px solid gray;
   outline: none;
+  padding-left: 5px;
 }
 
 .input-field:focus {
