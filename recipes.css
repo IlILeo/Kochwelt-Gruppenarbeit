@@ -28,7 +28,6 @@ main {
   width: 100%;
 }
 
-
 img {
   border-radius: 8px;
 }
@@ -270,7 +269,6 @@ img {
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
-    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
@@ -281,7 +279,6 @@ img {
   h3 {
     font-size: 18px;
   }
-
 
   header img {
     height: 43px;
@@ -367,7 +364,6 @@ img {
     margin-bottom: 0px;
   }
 
-
   .recipe-icon-content:last-child {
     margin-bottom: 0;
   }
@@ -395,15 +391,12 @@ img {
   footer {
     padding: 10px 40px;
   }
-
-
 }
 
 @media (min-width: 951px) {
   #toggle-bar {
     display: none;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
@@ -468,7 +461,6 @@ img {
     font-size: 18px;
   }
 
-
   header img {
     height: 43px;
   }
@@ -522,7 +514,6 @@ img {
     list-style: none;
     padding-top: 50px;
   }
-
 
   .recipe-icon-content:last-child {
     margin-bottom: 0;

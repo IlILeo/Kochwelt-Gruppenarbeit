@@ -6,15 +6,33 @@
   font-family: "Raleway";
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  padding: 28px 120px 60px 120px;
+  width: 100%;
+  align-items: center;
+}
+
+img {
+  border-radius: 8px;
 }
 
 h2 {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 15px;
 }
 
 header {
@@ -64,10 +82,6 @@ nav a:hover {
   text-underline-offset: 10px;
 }
 
-.hidden {
-  display: none;
-}
-
 button {
   color: white;
   background-color: #008000;
@@ -86,20 +100,27 @@ button {
   text-decoration: none;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #2fac44;
+}
+
+button:active {
+  transform: translateY(0);
+  transition: all 75ms ease-in-out;
+}
+
 .data-protection {
   display: flex;
-  padding: 30px 0;
-  width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
 }
 
 footer {
   background-color: #403b3b;
   padding: 30px 120px;
-  height: 240px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,21 +150,12 @@ footer img {
   height: 32px;
 }
 
-@media (min-width: 951px) {
-  #toggle-bar {
-    display: none;
-  }
-  main {
-    padding: 10px 40px;
-  }
-}
 @media (min-width: 320px) and (max-width: 700px) {
   header {
     padding: 10px 40px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
-    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
@@ -179,6 +191,10 @@ footer img {
     font-size: 16px;
   }
 
+  main {
+    padding: 10px 40px;
+  }
+
   .data-protection {
     padding: 10px 40px;
   }
@@ -188,21 +204,15 @@ footer img {
 
   footer {
     padding: 10px 40px;
-    height: 60px;
-  }
-
-  .footer-content {
-    max-width: 510px;
   }
 
   footer img {
-    height: 25px;
+    height: 35px;
   }
 
   .social-media img {
-    height: 15px;
+    height: 28px;
   }
-
   .mainMenu {
     display: none;
   }
@@ -218,12 +228,6 @@ footer img {
   .tootle-menu {
     display: flex;
     align-items: center;
-  }
-  /* bis hier: Header&Footer */
-
-  .img-croissant {
-    height: 160px;
-    object-fit: cover;
   }
 
   .main-section {
@@ -245,11 +249,10 @@ footer img {
 
 @media (min-width: 700px) and (max-width: 950px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 60px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
-    /*fürs Burger-Menü später 24px --> anklickbare Elemente meist 24px*/
   }
 
   h2 {
@@ -259,11 +262,6 @@ footer img {
 
   h3 {
     font-size: 18px;
-  }
-
-  .header-content {
-    max-width: 510px;
-    width: 100%;
   }
 
   header img {
@@ -278,34 +276,9 @@ footer img {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
-
-  button {
-    font-size: 16px;
-    padding: 8px;
-    font-size: 16px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 8px;
-    font-size: 16px;
-  }
-
   main {
-    padding: 10px 40px;
+    padding: 30px 60px;
     width: 100%;
-  }
-
-  .footer-content {
-    max-width: 510px;
-  }
-
-  footer img {
-    height: 25px;
-  }
-
-  .social-media img {
-    height: 15px;
   }
 
   .mainMenu {
@@ -325,16 +298,17 @@ footer img {
     display: flex;
     align-items: center;
   }
-}
 
-@media (min-width: 600px) {
-  .portion-content {
-    display: flex;
-    flex-direction: row !important;
+  footer {
+    padding: 10px 60px;
   }
-
-  .portion-button {
-    display: flex;
-    align-items: flex-start;
+}
+@media (min-width: 950px) {
+  main {
+    padding: 30px 120px;
+    width: 100%;
+  }
+  #toggle-bar {
+    display: none;
   }
 }
