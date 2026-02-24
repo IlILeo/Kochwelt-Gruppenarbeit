@@ -116,6 +116,14 @@ footer {
   align-items: center;
   width: 100%;
   margin-top: auto;
+
+}
+
+.copy-right {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 
 .footer-content {
@@ -362,11 +370,15 @@ img {
 
   footer {
     padding: 10px 40px;
+    flex-direction: column-reverse;
+    ;
   }
 
   footer img {
     height: 35px;
   }
+
+
 
   .social-media img {
     height: 28px;
@@ -433,11 +445,20 @@ img {
     font-size: 16px;
     flex-direction: column-reverse;
   }
+
+  .copy-right {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 400px) {
   .header-img {
     height: 39px;
+  }
+
+  .copy-right {
+    font-size: 11px;
+    justify-content: center;
   }
 }
 

@@ -225,6 +225,7 @@ img {
 #ingredient-list li:last-child {
   margin-bottom: 0;
 }
+
 footer {
   background-color: #403b3b;
   padding: 30px 120px;
@@ -248,6 +249,13 @@ footer img {
   width: auto;
 }
 
+.copy-right {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
 .social-media {
   display: flex;
   align-items: center;
@@ -257,6 +265,7 @@ footer img {
 .social-media img {
   height: 32px;
 }
+
 .hidden {
   display: none;
 }
@@ -385,11 +394,24 @@ footer img {
   footer {
     padding: 10px 40px;
   }
+
+  footer img {
+    height: 40px;
+  }
+
+  .social-media img {
+    height: 28px;
+  }
 }
 
 @media (max-width: 400px) {
   .header-img {
     height: 39px;
+  }
+
+  .copy-right {
+    font-size: 11px;
+    justify-content: center;
   }
 }
 
