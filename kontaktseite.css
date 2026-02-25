@@ -72,6 +72,58 @@ nav {
   align-items: flex-end;
 }
 
+.nav-container {
+  display: flex;
+}
+
+.topnav {
+  position: relative;
+  align-items: center;
+  font-size: 44px;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.topnav #myLinks a:hover {
+  color: #2fac44;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+.topnav a {
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+.topnav .icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
 nav a {
   text-decoration: none;
   color: black;
@@ -238,6 +290,10 @@ footer img {
     display: none;
   }
 
+  .topnav #myLinks {
+    top: 110px;
+  }
+
   nav a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -263,24 +319,6 @@ footer img {
 
   .social-media img {
     height: 25px;
-  }
-
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
   }
 
   .contact {
@@ -319,16 +357,24 @@ footer img {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 26px;
     padding-bottom: 16px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   nav {
     display: none;
+  }
+
+  .topnav #myLinks {
+    top: 87px;
+  }
+
+  .nav-container {
+    align-items: center;
   }
 
   nav a:hover {
@@ -336,23 +382,6 @@ footer img {
     text-underline-offset: 4px;
   }
 
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 
   footer {
     padding: 15px 40px;
@@ -369,13 +398,7 @@ footer img {
 }
 
 @media (min-width: 951px) {
-  #toggle-bar {
-    display: none;
-  }
-}
-
-@media (min-width: 951px) {
-  #toggle-bar {
+  .topnav .icon {
     display: none;
   }
 }

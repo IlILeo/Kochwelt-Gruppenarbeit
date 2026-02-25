@@ -1,3 +1,7 @@
+/*Burger Menu von W3 eingefügt, nochmal zur Übung: in einem Call oder anderweitig üben? 
+https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar */
+
+
 @font-face {
   font-family: "Raleway";
   src: url("./Raleway/Raleway-VariableFont_wght.ttf");
@@ -30,18 +34,25 @@ img {
   border-radius: 8px;
 }
 
+h1 {
+  font-size: 48px;
+}
+
 h2 {
+  font-weight: bold;
   font-size: 40px;
+  padding-bottom: 20px;
 }
 
 h3 {
   font-size: 34px;
 }
 
+
 header {
   display: flex;
   justify-content: center;
-  padding: 10px 120px 10px 120px;
+  padding: 10px 80px;
   height: 100px;
   width: 100%;
   box-shadow: 0 0px 6px rgb(0, 0, 0, 30%);
@@ -69,6 +80,58 @@ nav {
   display: flex;
   gap: 16px;
   align-items: flex-end;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.topnav {
+  position: relative;
+  align-items: center;
+  font-size: 44px;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.topnav #myLinks a:hover {
+  color: #2fac44;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+.topnav a {
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+.topnav .icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
 }
 
 nav a {
@@ -195,7 +258,7 @@ footer img {
   flex-direction: column;
   padding: 30px 80px;
   width: 100%;
-  gap: 40px;
+  gap: 25px;
 }
 
 .recipe-content {
@@ -241,6 +304,7 @@ footer img {
   width: 100%;
   max-width: 1440px;
 }
+
 .subtitle-vs {
   padding-top: 20px;
   font-size: 20px;
@@ -360,6 +424,10 @@ img {
     margin-bottom: 16px;
   }
 
+  h1 {
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 20px;
     padding-bottom: 16px;
@@ -375,6 +443,10 @@ img {
 
   nav {
     display: none;
+  }
+
+  .topnav #myLinks {
+    top: 110px;
   }
 
   nav a:hover {
@@ -405,23 +477,6 @@ img {
     height: 25px;
   }
 
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 
   .img-croissant {
     height: 160px;
@@ -442,6 +497,7 @@ img {
     gap: 15px;
     font-size: 16px;
   }
+
   .subtitle {
     font-size: 16px;
   }
@@ -469,6 +525,7 @@ img {
     font-size: 16px;
     flex-direction: column-reverse;
   }
+
   .subtitle-vs {
     font-size: 16px;
   }
@@ -497,6 +554,10 @@ img {
     height: 104px;
   }
 
+  h1 {
+    font-size: 34px;
+  }
+
   h2 {
     font-size: 26px;
     padding-bottom: 16px;
@@ -508,6 +569,14 @@ img {
 
   nav {
     display: none;
+  }
+
+  .topnav #myLinks {
+    top: 80px;
+  }
+
+  .nav-container {
+    align-items: center;
   }
 
   nav a:hover {
@@ -557,31 +626,15 @@ img {
     height: 28px;
   }
 
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (min-width: 951px) {
-  #toggle-bar {
-    display: none;
-  }
-
   .main-layout {
     gap: 40px;
   }
+
+  .topnav .icon {
+    display: none;
+  }
+
 }

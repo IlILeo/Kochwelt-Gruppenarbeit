@@ -76,6 +76,58 @@ nav {
   align-items: flex-end;
 }
 
+.nav-container {
+  display: flex;
+}
+
+.topnav {
+  position: relative;
+  align-items: center;
+  font-size: 44px;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.topnav #myLinks a:hover {
+  color: #2fac44;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+.topnav a {
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+}
+
+.topnav .icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
 nav a {
   text-decoration: none;
   color: black;
@@ -174,6 +226,10 @@ footer img {
     display: none;
   }
 
+  .topnav #myLinks {
+    top: 110px;
+  }
+
   nav a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -184,19 +240,6 @@ footer img {
     width: 100%;
   }
 
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
   .data-protection-media {
     word-wrap: break-word;
   }
@@ -205,10 +248,6 @@ footer img {
     font-size: 16px;
   }
 
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
 
   .data-protection-media footer {
     padding: 10px 60px;
@@ -252,6 +291,14 @@ footer img {
     display: none;
   }
 
+  .topnav #myLinks {
+    top: 87px;
+  }
+
+  .nav-container {
+    align-items: center;
+  }
+
   nav a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
@@ -262,36 +309,19 @@ footer img {
     width: 100%;
   }
 
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: end;
-    justify-content: center;
-  }
-
-  .tootle-menu {
-    display: flex;
-    align-items: center;
-  }
-
   footer {
     padding: 10px 40px;
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 951px) {
   main {
     padding: 30px 120px;
     width: 100%;
   }
 
-  #toggle-bar {
+
+  .topnav .icon {
     display: none;
   }
 }

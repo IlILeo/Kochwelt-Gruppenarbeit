@@ -46,23 +46,13 @@ function sendMail(event) {
     });
 }
 
-function toggleMenu() {
-  let getMenu = document.querySelector(".mainMenu");
-  let hamburger = document.getElementById("toggle-bar");
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+  console.log("hello");
 
-  getMenu.classList.toggle("hamburger");
-  hamburger.classList.toggle("hidden");
 }
-
-let getHamburger = document.querySelector("#toggle-bar");
-
-getHamburger.addEventListener("click", toggleMenu);
-
-// function hideMenu() {
-//   let hideBurger = document.getElementById("toggle-bar")
-//   hideBurger.classList.toggle("tootle-menu");
-// }
-
-// let getHamburger = document.querySelector("#toggle-bar");
-
-// getHamburger.addEventListener("click", toggleMenu);
