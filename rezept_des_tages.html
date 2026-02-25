@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt - Spaghetti Carbonara</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
     <link rel="stylesheet" href="recipes.css" />
-    
   </head>
   <body>
     <header>
@@ -35,93 +34,135 @@
     <main>
       <section class="main-section">
         <div class="Recipe-hero-container">
-            <h2>Spaghetti Carbonara</h2>
-            <img class="full-with-img" src="./img/Carbonara.jpg" alt=" Spaghetti Carbonara">
+          <h2>Spaghetti Carbonara</h2>
+          <img
+            class="full-with-img"
+            src="./img/Carbonara.jpg"
+            alt=" Spaghetti Carbonara"
+          />
         </div>
-    
-   
-        
-        <div class="recipe-icon-container recipe-icon-container-media">
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/clock-regular.svg" alt="Gesamtzeit"> 
-            <p>35 Min</p> 
-            </div>
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/brain-solid.svg" alt="Schwierigkeit">
-            <p>simple</p>
-            </div>   
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/calendar-alt-regular.svg" alt="Erstelldatum vom Rezept">
-            <p>21.02.2025</p> 
-            </div>    
-        
-      </div>
-      
-    <div class="portion-button"; >
-         
-        <div class="portion-content">
-        <span class="portion-span" >Zutaten für:</span>
-          <div class="second-portion-content">
-        <input class="portion-layout" type="number" id="portion-input" value="4" min="1" 
-            >
-            
-            <button onclick="calculatedQuantity()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
-         </div>
-         </div>
-          
-       </div>
-          <ul id="ingredient-list" style="list-style: none;">
-            
-            <li data-menge="400" data-einheit="g"> 400 g Spaghetti</li>
-            <li data-menge="2" data-einheit="EL">2 EL Olivenöl</li>
-            <li data-menge="280" data-einheit="g">280 g Guancale (oder Pancetta)</li>
-            <li data-menge="120" data-einheit="g">120 g Parmesan gerieben (oder Pecorino)</li>
-            <li data-menge="4" data-einheit="Eier">4 Eier (Größe M)</li>
-            <li data-menge="2" data-einheit="Brise">2 Brise(n) Pfeffer</li>
-            <li data-menge="2" data-einheit="Brise">2 Brise(n) Salz</li>
-          </ul>  
-      </div>
 
-      <div class="preparation">
-          <h2>Zubereitung</h2>
+        <div class="subtitle">
           <div class="recipe-icon-container recipe-icon-container-media">
             <div class="recipe-icon-content">
-            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Gesamtzeit">
-            <p>35 min. Gesamtzeit</p>
+              <img src="./img/icons/clock-regular.svg" alt="Gesamtzeit" />
+              <p>35 Min</p>
             </div>
             <div class="recipe-icon-content">
-            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
-            <p>15 min. Zubereitungszeit</p>
+              <img src="./img/icons/brain-solid.svg" alt="Schwierigkeit" />
+              <p>simple</p>
             </div>
             <div class="recipe-icon-content">
-            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Koch & Ruhezeit">
-            <p>20 min. Koch & Ruhezeit</p>
+              <img
+                src="./img/icons/calendar-alt-regular.svg"
+                alt="Erstelldatum vom Rezept"
+              />
+              <p>21.02.2025</p>
+            </div>
+
+            <div class="portion-button" ;>
+              <div class="portion-content">
+                <span class="portion-span">Zutaten für:</span>
+                <div class="second-portion-content">
+                  <input
+                    class="portion-layout"
+                    type="number"
+                    id="portion-input"
+                    value="4"
+                    min="1"
+                  />
+
+                  <button
+                    onclick="calculatedQuantity()"
+                    style="padding: 5px 15px; cursor: pointer"
+                  >
+                    Portionen
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul id="ingredient-list" style="list-style: none">
+              <li data-menge="400" data-einheit="g">400 g Spaghetti</li>
+              <li data-menge="2" data-einheit="EL">2 EL Olivenöl</li>
+              <li data-menge="280" data-einheit="g">
+                280 g Guancale (oder Pancetta)
+              </li>
+              <li data-menge="120" data-einheit="g">
+                120 g Parmesan gerieben (oder Pecorino)
+              </li>
+              <li data-menge="4" data-einheit="Eier">4 Eier (Größe M)</li>
+              <li data-menge="2" data-einheit="Brise">2 Brise(n) Pfeffer</li>
+              <li data-menge="2" data-einheit="Brise">2 Brise(n) Salz</li>
+            </ul>
           </div>
+
+          <div class="preparation">
+            <h2>Zubereitung</h2>
+            <div class="recipe-icon-container recipe-icon-container-media">
+              <div class="recipe-icon-content">
+                <img
+                  class="icon-border"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Gesamtzeit"
+                />
+                <p class="subtitle">35 min. Gesamtzeit</p>
+              </div>
+              <div class="recipe-icon-content">
+                <img
+                  class="icon-border"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Zubereitungszeit"
+                />
+                <p class="subtitle">15 min. Zubereitungszeit</p>
+              </div>
+              <div class="recipe-icon-content">
+                <img
+                  class="icon-border"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Koch & Ruhezeit"
+                />
+                <p class="subtitle">20 min. Koch & Ruhezeit</p>
+              </div>
+            </div>
+
+            <p class="subtitle">
+              Für originale Spaghetti Carbonara zuerst die Spaghetti in einem
+              großen Topf mit Salzwasser bissfest (ca. 8 Minuten) kochen,
+              anschließend gut abtropfen lassen. Dabei ein wenig Kochwasser
+              auffangen.
+              <br />
+              In der Zwischenzeit den in kleine Würfel geschnittenen Guanciale
+              (oder Pancetta) in einer großen, beschichteten Pfanne mit Olivenöl
+              knusprig anbraten und die Pfanne von der Kochplatte ziehen damit
+              sie ein wenig abkühlt.
+              <br />
+              Nun die Eier mit dem geriebenen Käse in einer Schale gut
+              verquirlen und mit Salz und Pfeffer würzen.
+              <br />
+              Danach die Spaghetti in die Pfanne zum angebratenen Speck geben,
+              vermengen, die Käsemischung unterrühren und esslöffelweise das
+              aufgefangenen Kochwasser einrühren - bis die Konsistenz schön
+              cremig ist.
+              <br />
+              Die originale Spaghetti Carbonara in tiefe Teller anrichten, mit
+              geriebenen Parmesan bestreuen und mit Basilikumblätter garnieren.
+            </p>
           </div>
-        
-          <p>
-          Für originale Spaghetti Carbonara zuerst die Spaghetti in einem großen Topf mit Salzwasser bissfest (ca. 8 Minuten) kochen, anschließend gut abtropfen lassen. Dabei ein wenig Kochwasser auffangen.
-          <br><br>
-         In der Zwischenzeit den in kleine Würfel geschnittenen Guanciale (oder Pancetta) in einer großen, beschichteten Pfanne mit Olivenöl knusprig anbraten und die Pfanne von der Kochplatte ziehen damit sie ein wenig abkühlt.
-          <br><br>
-          Nun die Eier mit dem geriebenen Käse in einer Schale gut verquirlen und mit Salz und Pfeffer würzen.
-         <br><br>
-          Danach die Spaghetti in die Pfanne zum angebratenen Speck geben, vermengen, die Käsemischung unterrühren und esslöffelweise das aufgefangenen Kochwasser einrühren - bis die Konsistenz schön cremig ist.
-          <br><br>
-          Die originale Spaghetti Carbonara in tiefe Teller anrichten, mit geriebenen Parmesan bestreuen und mit Basilikumblätter garnieren.
-        </p>
         </div>
 
         <div class="recipe-creator">
           <h3>Rezept erstellt von</h3>
-         
+
           <div class="creator-info">
-          <img src="./img/profile.png" alt="Profilfoto und Name vom Ersteller des Rezeptes">
-          <span>Team</span>
+            <img
+              src="./img/profile.png"
+              alt="Profilfoto und Name vom Ersteller des Rezeptes"
+            />
+            <span>Team</span>
           </div>
         </div>
-        </section>
-      </main>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-content">
@@ -129,19 +170,27 @@
         <span class="copy-right">© by Kochwelt</span>
         <div class="social-media">
           <a href=" https://www.facebook.com/?locale=de_DE">
-            <img src="./img/facebook_logo.png" alt="Facebook Profil von unserer Seite Kochwelt" />
+            <img
+              src="./img/facebook_logo.png"
+              alt="Facebook Profil von unserer Seite Kochwelt"
+            />
           </a>
           <a href="https://www.instagram.com/">
-            <img src="./img/instagrram_logo.png" alt="Instagram von unserer Seite Kochwelt" />
+            <img
+              src="./img/instagrram_logo.png"
+              alt="Instagram von unserer Seite Kochwelt"
+            />
           </a>
           <a href="https://www.tiktok.com/explore">
-            <img src="./img/tiktok_logo.png" alt="Tiktokchannel von unserer Kochseite"  />
+            <img
+              src="./img/tiktok_logo.png"
+              alt="Tiktokchannel von unserer Kochseite"
+            />
           </a>
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
-<script src="script.js"></script>
-  
-</body>
 </html>

@@ -1,15 +1,23 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Raleway";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Raleway";
 }
 
 main {
@@ -23,13 +31,11 @@ img {
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 34px;
 }
 
 header {
@@ -148,7 +154,7 @@ footer img {
 }
 
 .img-croissant {
-  height: 240px;
+  height: 320px;
   width: auto;
 }
 
@@ -166,10 +172,20 @@ footer img {
   gap: 32px;
 }
 
+.subtitle {
+  font-size: 20px;
+}
+
 .main-layout {
   gap: 80px;
   display: flex;
   flex-direction: column;
+}
+
+.title-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .recipe-section {
@@ -179,6 +195,7 @@ footer img {
   flex-direction: column;
   padding: 30px 120px;
   width: 100%;
+  gap: 40px;
 }
 
 .recipe-content {
@@ -189,7 +206,7 @@ footer img {
 }
 
 .img-small {
-  height: 160px;
+  height: 240px;
   width: auto;
   aspect-ratio: 1;
   object-fit: cover;
@@ -223,6 +240,10 @@ footer img {
 .versus-content {
   width: 100%;
   max-width: 1440px;
+}
+.subtitle-vs {
+  padding-top: 20px;
+  font-size: 20px;
 }
 
 .versus-headline {
@@ -333,7 +354,7 @@ img {
 
 @media (min-width: 320px) and (max-width: 700px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 20px;
     font-size: 16px;
     height: 120px;
     margin-bottom: 16px;
@@ -368,7 +389,7 @@ img {
   }
 
   footer {
-    padding: 10px 40px;
+    padding: 10px 20px;
     flex-direction: column-reverse;
   }
 
@@ -408,7 +429,7 @@ img {
   }
 
   .main-section {
-    padding: 9px 40px 25px;
+    padding: 9px 20px 25px;
   }
 
   .main-content {
@@ -421,9 +442,12 @@ img {
     gap: 15px;
     font-size: 16px;
   }
+  .subtitle {
+    font-size: 16px;
+  }
 
   .recipe-section {
-    padding: 25px 40px 25px;
+    padding: 25px 20px 25px;
   }
 
   .recipe-content {
@@ -432,11 +456,11 @@ img {
   }
 
   .img-small {
-    height: 80px;
+    height: 140px;
   }
 
   .versus-section {
-    padding: 25px 40px 25px;
+    padding: 25px 20px 25px;
   }
 
   .versus-text {
@@ -444,6 +468,9 @@ img {
     padding-top: 6px;
     font-size: 16px;
     flex-direction: column-reverse;
+  }
+  .subtitle-vs {
+    font-size: 16px;
   }
 
   .copy-right {
@@ -471,12 +498,12 @@ img {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 26px;
     padding-bottom: 16px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   nav {
@@ -498,12 +525,20 @@ img {
     padding: 14px 60px 30px;
   }
 
+  .img-croissant {
+    height: 255px;
+  }
+
   .main-layout {
     gap: 40px;
   }
 
   .recipe-section {
     padding: 30px 60px 30px;
+  }
+
+  .img-small {
+    height: 180px;
   }
 
   .versus-section {

@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt-Putenschnitzel</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
     <link rel="stylesheet" href="recipes.css" />
-    
   </head>
   <body>
     <header>
@@ -35,87 +34,121 @@
     <main>
       <section class="main-section">
         <div class="Recipe-hero-container">
-            <h2>Putenschnitzel</h2>
-            <img class="full-with-img" src="./img/Schnitzel.jpg" alt="Foto Schnitzel">
+          <h2>Putenschnitzel</h2>
+          <img
+            class="full-with-img"
+            src="./img/Schnitzel.jpg"
+            alt="Foto Schnitzel"
+          />
         </div>
-
-        <div class="recipe-icon-container">
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/clock-regular.svg" alt="Zubereitungszeit"> 
-            <p>60 Min</p> 
+        <div class="subtitle">
+          <div class="recipe-icon-container">
+            <div class="recipe-icon-content">
+              <img src="./img/icons/clock-regular.svg" alt="Zubereitungszeit" />
+              <p class="subtitle">60 Min</p>
             </div>
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/brain-solid.svg" alt="Schwierigkeit">
-            <p>simple</p>
-            </div>   
-            <div class="recipe-icon-content">  
-            <img  src="./img/icons/calendar-alt-regular.svg" alt="Erstelldatum vom Rezept">
-            <p>20.02.2025</p> 
-            </div>    
-        
-      </div>
-      
-      <div class="portion-button"; >
-         
-        <div class="portion-content">
-        <span class="portion-span" >Zutaten für:</span>
-          <div class="second-portion-content">
-        <input class="portion-layout" type="number" id="portion-input" value="4" min="1" 
-            >
-            
-            <button onclick="calculatedQuantity()" style="padding: 5px 15px; cursor: pointer;">Portionen</button>
-         </div>
-         </div>
-          
-       </div>
-          <ul id="ingredient-list" style="list-style: none;">
-            <li data-menge="4" data-einheit="Stk"> 4 Stk Puntenschnitzel</li>
+            <div class="recipe-icon-content">
+              <img src="./img/icons/brain-solid.svg" alt="Schwierigkeit" />
+              <p class="subtitle">simple</p>
+            </div>
+            <div class="recipe-icon-content">
+              <img
+                src="./img/icons/calendar-alt-regular.svg"
+                alt="Erstelldatum vom Rezept"
+              />
+              <p class="subtitle">20.02.2025</p>
+            </div>
+          </div>
+
+          <div class="portion-button" ;>
+            <div class="portion-content">
+              <span class="portion-span">Zutaten für:</span>
+              <div class="second-portion-content">
+                <input
+                  class="portion-layout"
+                  type="number"
+                  id="portion-input"
+                  value="4"
+                  min="1"
+                />
+
+                <button
+                  onclick="calculatedQuantity()"
+                  style="padding: 5px 15px; cursor: pointer"
+                >
+                  Portionen
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul id="ingredient-list" style="list-style: none">
+            <li data-menge="4" data-einheit="Stk">4 Stk Puntenschnitzel</li>
             <li data-menge="1" data-einheit="Prise">1 Prise Salz</li>
             <li data-menge="80" data-einheit="g">80 g Mehl</li>
             <li data-menge="1" data-einheit="Stk">1 Stk Ei</li>
             <li data-menge="80" data-einheit="g">80 g Semmelbrösel</li>
             <li data-menge="250" data-einheit="ml">250 ml Öl</li>
             <li data-menge="8" data-einheit="Stk">8 Stk Kartoffeln</li>
-            <li data-menge="4" data-einheit="Scheiben">4 Scheiben Zitrone (n)</li>
-            <li data-menge="4" data-einheit="Portionen">4 Portionen Preiselbeere (optional)</li>
-          </ul>  
-        
+            <li data-menge="4" data-einheit="Scheiben">
+              4 Scheiben Zitrone (n)
+            </li>
+            <li data-menge="4" data-einheit="Portionen">
+              4 Portionen Preiselbeere (optional)
+            </li>
+          </ul>
 
-      <div class="preparation">
-          <h2>Zubereitung</h2>
-          <div class="recipe-icon-container recipe-icon-container-media">
-            
-            <div class="recipe-icon-content">
-            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
-            <p>60 min. Gesamtzeit</p>
+          <div class="preparation">
+            <h2>Zubereitung</h2>
+            <div class="recipe-icon-container recipe-icon-container-media">
+              <div class="recipe-icon-content">
+                <img
+                  class="icon-border"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Zubereitungszeit"
+                />
+                <p>60 min. Gesamtzeit</p>
+              </div>
+              <div class="recipe-icon-content">
+                <img
+                  class="icon-border"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Zubereitungszeit"
+                />
+                <p>40 min. Zubereitungszeit</p>
+              </div>
             </div>
-            <div class="recipe-icon-content"> 
-            <img class ="icon-border" src="./img/icons/clock-regular.svg" alt="Zubereitungszeit">
-            <p>40 min. Zubereitungszeit</p>
-            </div>
+
+            <p class="subtitle">
+              Die Schnitzel mit kaltem Wasser waschen, trockentupfen, mit dem
+              Fleischhammer ein wenig flach klopfen und auf beiden Seiten
+              salzen. Anschließend die Fleischstücke zuerst im Mehl, dann im
+              verquirlten Ei und zum Schluss in den Brösel wenden – die Panade
+              mit den Händen ein wenig andrücken. Die panierten Schnitzel in
+              reichlich heißem Öl, bei mittlerer Hitze, goldbraun, auf jeder
+              Seite für rund 4 Minuten, braten.
+              <br />
+              <i>Für die Belage:</i> Wasser in einem Kochtopf zum Kochen bringen
+              und die Kartoffeln schälen und bissfest garen.
+              <br />
+              <i>Anrichten:</i> Schnitzel, Kartoffeln auf einem Teller
+              anrichten. Zitronenscheibe auf das Schnitzel legen und ggf. mit
+              Preiselbeer garnieren.
+            </p>
           </div>
-
-          <p>
-            Die Schnitzel mit kaltem Wasser waschen, trockentupfen, mit dem Fleischhammer ein wenig flach klopfen und auf beiden Seiten salzen.
-            Anschließend die Fleischstücke zuerst im Mehl, dann im verquirlten Ei und zum Schluss in den Brösel wenden – die Panade mit den Händen ein wenig andrücken.
-            Die panierten Schnitzel in reichlich heißem Öl, bei mittlerer Hitze, goldbraun, auf jeder Seite für rund 4 Minuten, braten.
-            <br><br>
-            <i>Für die Belage:</i> Wasser in einem Kochtopf zum Kochen bringen und die Kartoffeln schälen und bissfest garen. 
-            <br><br>
-            <i>Anrichten:</i> Schnitzel, Kartoffeln auf einem Teller anrichten. Zitronenscheibe auf das Schnitzel legen und ggf. mit Preiselbeer garnieren.
-
-          </p>
         </div>
         <div class="recipe-creator">
           <h3>Rezept erstellt von</h3>
-         
+
           <div class="creator-info">
-          <img src="./img/profile.png" alt="Profilfoto und Name vom Ersteller des Rezeptes">
-          <span>Cem</span>
+            <img
+              src="./img/profile.png"
+              alt="Profilfoto und Name vom Ersteller des Rezeptes"
+            />
+            <span>Cem</span>
           </div>
         </div>
-        </section>
-      </main>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-content">
@@ -123,21 +156,27 @@
         <span class="copy-right">© by Kochwelt</span>
         <div class="social-media">
           <a href="https://www.facebook.com/?locale=de_DE">
-            <img src="./img/facebook_logo.png" alt="Facebook Profil von unserer Seite Kochwelt" />
+            <img
+              src="./img/facebook_logo.png"
+              alt="Facebook Profil von unserer Seite Kochwelt"
+            />
           </a>
           <a href="https://www.instagram.com/">
-            <img src="./img/instagrram_logo.png" alt="Instagram von unserer Seite Kochwelt" />
+            <img
+              src="./img/instagrram_logo.png"
+              alt="Instagram von unserer Seite Kochwelt"
+            />
           </a>
           <a href="https://www.tiktok.com/explore">
-            <img src="./img/tiktok_logo.png" alt="Tiktokchannel von unserer Kochseite"  />
+            <img
+              src="./img/tiktok_logo.png"
+              alt="Tiktokchannel von unserer Kochseite"
+            />
           </a>
         </div>
       </div>
     </footer>
 
-
+    <script src="script.js"></script>
   </body>
-<script src="script.js"></script>
-  
-</body>
 </html>

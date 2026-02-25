@@ -1,15 +1,23 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Raleway";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Raleway";
 }
 
 main {
@@ -27,12 +35,12 @@ img {
 
 h2 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   padding-bottom: 20px;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 34px;
 }
 
 header {
@@ -87,6 +95,7 @@ nav a:hover {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
+  font-size: 20px;
 }
 
 footer {
@@ -146,7 +155,7 @@ footer img {
 
 @media (min-width: 320px) and (max-width: 700px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
@@ -171,7 +180,7 @@ footer img {
   }
 
   main {
-    padding: 30px 40px;
+    padding: 30px 20px;
     width: 100%;
   }
 
@@ -192,6 +201,10 @@ footer img {
     word-wrap: break-word;
   }
 
+  .subtitle {
+    font-size: 16px;
+  }
+
   .tootle-menu {
     display: flex;
     align-items: center;
@@ -202,7 +215,7 @@ footer img {
   }
 
   footer {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
 
   footer img {

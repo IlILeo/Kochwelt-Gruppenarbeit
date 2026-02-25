@@ -1,15 +1,23 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Raleway";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Raleway";
 }
 
 main {
@@ -24,12 +32,12 @@ img {
 
 h2 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   padding-bottom: 20px;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 34px;
 }
 
 header {
@@ -152,6 +160,7 @@ footer img {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  font-size: 20px;
 }
 
 .contact-input label {
@@ -210,7 +219,7 @@ footer img {
 
 @media (min-width: 320px) and (max-width: 700px) {
   header {
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
@@ -241,7 +250,7 @@ footer img {
   }
 
   footer {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
 
   footer img {
@@ -275,7 +284,7 @@ footer img {
   }
 
   .contact {
-    padding: 16px 32px;
+    padding: 16px 20px;
   }
 
   .contact-content {
@@ -284,6 +293,11 @@ footer img {
 
   .contact-input {
     gap: 16px;
+    font-size: 16px;
+  }
+
+  .input-field {
+    font-size: 16px;
   }
 
   .contact-input textarea {
