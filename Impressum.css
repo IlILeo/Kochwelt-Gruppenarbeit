@@ -24,7 +24,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 28px 120px 60px 120px;
+  padding: 28px 80px 60px;
   width: 100%;
   align-items: center;
 }
@@ -46,7 +46,7 @@ h3 {
 header {
   display: flex;
   justify-content: center;
-  padding: 10px 120px 10px 120px;
+  padding: 10px 80px;
   height: 100px;
   width: 100%;
   box-shadow: 0 0px 6px rgb(0, 0, 0, 30%);
@@ -99,6 +99,7 @@ nav a:hover {
 
 .subtitle {
   font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .main-section a {
@@ -156,7 +157,7 @@ button:active {
 
 footer {
   background-color: #403b3b;
-  padding: 30px 120px;
+  padding: 30px 80px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -209,7 +210,7 @@ footer img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 700px) {
+@media (max-width: 700px) {
   header {
     padding: 10px 20px;
     margin-bottom: 16px;
@@ -283,9 +284,9 @@ footer img {
   }
 }
 
-@media (min-width: 700px) and (max-width: 950px) {
+@media (min-width: 701px) and (max-width: 950px) {
   header {
-    padding: 10px 60px;
+    padding: 10px 40px;
     margin-bottom: 16px;
     font-size: 16px;
     height: 120px;
@@ -310,7 +311,7 @@ footer img {
   }
 
   main {
-    padding: 30px 60px;
+    padding: 30px 40px;
     width: 100%;
   }
 
@@ -333,7 +334,7 @@ footer img {
   }
 
   footer {
-    padding: 10px 60px;
+    padding: 10px 40px;
   }
 }
 
